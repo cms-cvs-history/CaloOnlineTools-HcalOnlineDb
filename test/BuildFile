@@ -8,4 +8,5 @@
 <use name=CaloOnlineTools/HcalOnlineDb>
 
 <bin file=xmlTools.cc name=xmlToolsRun>
+   <use name=boost_program_options>
 </bin>
