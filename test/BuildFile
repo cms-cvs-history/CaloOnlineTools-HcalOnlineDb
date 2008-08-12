@@ -1,6 +1,5 @@
 <use name=DataFormats/Common>
 <use name=rootrflx>
-<use name=xerces-c>
 <use name=xdaq>
 <use name=DataFormats/HcalDetId>
 <use name=CondTools/Hcal>
