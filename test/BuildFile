@@ -1,12 +1,14 @@
+
+
+<bin file=xmlTools.cc name=xmlToolsRun>
+
 <use name=DataFormats/Common>
 <use name=rootrflx>
 <use name=xdaq>
 <use name=DataFormats/HcalDetId>
 <use name=CondTools/Hcal>
 
-<use name=CaloOnlineTools/HcalOnlineDb>
-
-<bin file=xmlTools.cc name=xmlToolsRun>
    <use name=xerces-c>
    <use name=boost_program_options>
+   <use name=CaloOnlineTools/HcalOnlineDb>
 </bin>
