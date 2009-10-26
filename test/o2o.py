@@ -64,6 +64,61 @@ def guess_condition_from_tag(tagname):
         guessed_query_file_name = base_dir+"/HcalChannelQuality.sql"
         guessed_pool_record = "HcalChannelQualityRcd"
 
+    if guessed_type == "HcalLutMetadata":
+        guessed_type = "LutMetadata"
+        guessed_query_file_name = base_dir+"/HcalLutMetadata.sql"
+        guessed_pool_record = "HcalLutMetadataRcd"
+
+    if guessed_type == "HcalRespCorrs":
+        guessed_type = "RespCorrs"
+        guessed_query_file_name = base_dir+"/HcalRespCorrs.sql"
+        guessed_pool_record = "HcalRespCorrsRcd"
+
+    if guessed_type == "HcalValidationCorrs":
+        guessed_type = "ValidationCorrs"
+        guessed_query_file_name = base_dir+"/HcalValidationCorrs.sql"
+        guessed_pool_record = "HcalValidationCorrsRcd"
+
+    if guessed_type == "HcalPedestals":
+        guessed_type = "Pedestals"
+        guessed_query_file_name = base_dir+"/HcalPedestals.sql"
+        guessed_pool_record = "HcalPedestalsRcd"
+
+    if guessed_type == "HcalPedestalWidths":
+        guessed_type = "PedestalWidths"
+        guessed_query_file_name = base_dir+"/HcalPedestalWidths.sql"
+        guessed_pool_record = "HcalPedestalWidthsRcd"
+
+    if guessed_type == "HcalGains":
+        guessed_type = "Gains"
+        guessed_query_file_name = base_dir+"/HcalGains.sql"
+        guessed_pool_record = "HcalGainsRcd"
+
+    if guessed_type == "HcalGainWidths":
+        guessed_type = "GainWidths"
+        guessed_query_file_name = base_dir+"/HcalGainWidths.sql"
+        guessed_pool_record = "HcalGainWidthsRcd"
+
+    if guessed_type == "HcalQIEData":
+        guessed_type = "QIEData"
+        guessed_query_file_name = base_dir+"/HcalQieData.sql"
+        guessed_pool_record = "HcalQIEDataRcd"
+
+    if guessed_type == "HcalElectronicsMap":
+        guessed_type = "ElectronicsMap"
+        guessed_query_file_name = base_dir+"/HcalEmap.sql"
+        guessed_pool_record = "HcalElectronicsMapRcd"
+
+    if guessed_type == "HcalZSThresholds":
+        guessed_type = "ZSThresholds"
+        guessed_query_file_name = base_dir+"/HcalZSThresholds.sql"
+        guessed_pool_record = "HcalZSThresholdsRcd"
+
+    if guessed_type == "HcalL1TriggerObjects":
+        guessed_type = "L1TriggerObjects"
+        guessed_query_file_name = base_dir+"/HcalL1TriggerObjects.sql"
+        guessed_pool_record = "HcalL1TriggerObjectsRcd"
+
     return {'condition_type':guessed_type,
             'query_file_name':guessed_query_file_name,
             'pool_record':guessed_pool_record}
