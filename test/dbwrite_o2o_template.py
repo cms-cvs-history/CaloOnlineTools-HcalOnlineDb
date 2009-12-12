@@ -11,7 +11,7 @@ process.MessageLogger=cms.Service("MessageLogger",
 
 process.load("CondCore.DBCommon.CondDBCommon_cfi")
 process.CondDBCommon.connect = cms.string('CONNECT_STRING')
-process.CondDBCommon.DBParameters.authenticationPath = cms.untracked.string('/afs/cern.ch/cms/DB/conddb')
+process.CondDBCommon.DBParameters.authenticationPath = cms.untracked.string('POOL_AUTH_PATH')
 
 process.source = cms.Source("EmptyIOVSource",
     timetype = cms.string('runnumber'),
