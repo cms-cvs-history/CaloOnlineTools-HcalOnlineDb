@@ -2,7 +2,7 @@
 //
 // Original Author:  Gena Kukartsev Mar 11, 2009
 // Adapted from HcalDbOmds.h
-// $Id: HcalDbOmds.h,v 1.9 2010/01/26 08:36:56 kukartse Exp $
+// $Id: HcalDbOmds.h,v 1.8.2.1 2010/02/26 00:51:03 kukartse Exp $
 //
 //
 #ifndef HcalDbOmds_h
@@ -25,7 +25,7 @@ using namespace oracle::occi;
    \class HcalDbOmds
    \brief IO for OMDS instances of Hcal Calibrations
    \author Gena Kukartsev March 11, 2009
-   $Id: HcalDbOmds.h,v 1.9 2010/01/26 08:36:56 kukartse Exp $
+   $Id: HcalDbOmds.h,v 1.8.2.1 2010/02/26 00:51:03 kukartse Exp $
    
 Text file formats for different data types is as following:
 - # in first column comments the line
@@ -177,6 +177,8 @@ namespace HcalDbOmds {
   unsigned int          getSliceFromDpName(std::string _dpname);
   unsigned int          getSubChannelFromDpName(std::string _dpname);
   HcalDcsDetId::DcsType getDcsTypeFromDpName(std::string _dpname);
+  HcalOtherSubdetector  getSubDetFromString(std::string subdet);
+  HcalDcsDetId::DcsType getDcsTypeFromString(std::string type);
 
   template<class T>
   bool from_string(T& t, const std::string& s, std::ios_base& (*f)(std::ios_base&));
